@@ -1,0 +1,113 @@
+Day 3 Tasks:
+
+
+using System;
+namespace Day3;
+class program
+{
+    static void Ar ()              //Question No 1
+    {
+        int[] ar = { 1, 2, 3, 4, 5, 6 };
+        for (int i = 0; i < ar.Length; i++)
+        {
+            Console.WriteLine(ar[i]);
+        }
+    }
+
+    
+    static string str()                //Question No 2
+    {
+        string s = "Contour";
+        string ss = "Software";
+        string sss = (" \""+s+" "+ss+"\"");
+        return sss;
+    }
+    
+
+    
+    static int sum()                //Question No 3
+    {
+        int sum = 0;                       
+        int[] arr2 = { 1, 2, 3, 4, 5, 6 };
+        for (int i = 0; i < arr2.Length; i++)
+        {
+            sum = sum + arr2[i];
+        }
+        return sum;
+    }
+    
+
+    
+    static char strr()           //Question No 4
+    {
+        string name = "Zeerak";
+        char ch = name[name.Length-1];
+        return ch;
+    }
+    
+
+    
+    static double array()        //Question No 5
+    {
+        double[] d = {23.87,45.90,46.9,7.9,5.0,56.999,2.9098};
+        double max = d[0];
+        for (int i = 1; i < d.Length; i++)
+        {
+            if (d[i] > max)
+            {
+                max = d[i];
+            }
+        }
+        return max;
+
+    }
+    
+
+    
+    static string length()             //Question No 6
+    {
+        string nam1 = "Zeerak Asif Malik";
+        string length = Convert.ToString(nam1.Length);
+        return length;
+    }
+    
+
+    
+    static string age()                 //Question No 7
+    {
+        int num = Convert.ToInt32(Console.ReadLine());
+        string age = (num <= 12) ? "Kid" : (num <= 19) ? "Teenager" : "Adult";
+        return age;
+    }
+    
+
+    static int largest()        //Question No 8
+    {
+        int[] m = new int[5]; ;
+        for (int i = 0; i < m.Length; i++)
+        {
+            m[i]=Convert.ToInt32(Console.ReadLine());
+        }
+        int max = m[0];
+        for (int j = 1; j < m.Length; j++)
+        {
+            if (m[j] > max)
+            {
+                max = m[j];
+            }
+        }
+        return max;
+
+    }
+    static void Main(String[] args)
+    {
+        Ar();
+        Console.WriteLine(str());
+        Console.WriteLine(sum());
+        Console.WriteLine(strr());
+        Console.WriteLine(array());
+        Console.WriteLine(length());
+        Console.WriteLine(age());
+        Console.WriteLine(largest());
+    }
+}
