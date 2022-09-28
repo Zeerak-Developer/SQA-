@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class calculator
+    {
+        public double add(double m, double n)
+        {
+            double sum = m + n;
+            return sum;
+        }
+        public double sub(double m, double n)
+        {
+            double sub = m - n;
+            return sub;
+        }
+        public double mul(double m, double n)
+        {
+            double mul = m * n;
+            return mul;
+        }
+        public double div(double m, double n)
+        {
+            double div = m / n;
+            return div;
+        }
+        public double percentage(double m, double n)
+        {
+            double per = m / n;
+            double percent = per * 100;
+            return percent;
+        }
+
+    }
+}

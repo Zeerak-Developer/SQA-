@@ -1,0 +1,135 @@
+using System;
+namespace day8;
+class program
+{
+    static void Main(String[] args)
+    {
+/*
+        //Question No 1:
+
+        Console.WriteLine("Enter a Number ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        grades g = new grades(num);
+        g.print();
+
+        //Question NO 2
+
+        add m = new add(60, 75);
+        Console.WriteLine("Sum of 2 number is {0}\nSum of 3 numbers us {1} ", m.sum(60, 75), m.sum(60, 75, 15));
+
+        //Question No 3
+
+        employee emp = new employee("Zeerak", "CONTOUR", 100000);
+        emp.print();
+        int salary = emp.printSal();
+        Console.WriteLine("Salary of employee is {0} ", salary);
+
+        //Question No 4
+
+        Console.WriteLine("Enter a string: ");
+        revstr r = new revstr();
+        string input = Console.ReadLine();
+        string result = r.reverse(input);
+        Console.WriteLine("Reverse string: {0}", result);
+
+        //Question No 5
+
+        browser b = new browser("GOOGLE", "SEARCH ENGINE", 8.8F, 1996);
+        b.print();
+        Console.WriteLine("This browser was created in {0}", b.yearc());
+*/
+
+        //Question No 6
+
+        printvalues val = new printvalues();
+        Console.Write("Enter number a: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter number b: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine(val.Get());
+        Console.WriteLine(val.Set(a, b));
+        Console.WriteLine(val.greater());
+
+/*
+        //Question No 7
+
+        mathfunction mathf = new mathfunction();
+        Console.WriteLine("Max Number in array: "+mathf.max());
+        mathfunction mathff = new mathfunction();
+        Console.WriteLine("Min Number in array: "+mathff.min());
+        mathfunction mathfff = new mathfunction();
+        Console.WriteLine("Average of array: "+mathfff.avg());
+
+        //Question No 8
+
+        car c = new car("Sportscar", 2021, "White", "Toyota");
+        c.print();
+        string manufacturer = c.manu();
+        Console.WriteLine("Manufacture by {0} ", manufacturer);
+
+        //Question No 9
+
+        Console.WriteLine("Enter a Number m: ");
+        double m = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Enter a Number n: ");
+        double n = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Enter a case Number");
+        int c = Convert.ToInt32(Console.ReadLine());
+        switch (c)
+        {
+            case 1:
+                calculator sum = new calculator();
+                Console.WriteLine(sum.add(m, n));
+                break;
+            case 2:
+                calculator sub = new calculator();
+                Console.WriteLine(sub.sub(m, n));
+                break;
+            case 3:
+                calculator mul = new calculator();
+                Console.WriteLine(mul.mul(m, n));
+                break;
+            case 4:
+                calculator div = new calculator();
+                Console.WriteLine(div.div(m, n));
+                break;
+            case 5:
+                calculator per = new calculator();
+                Console.WriteLine(per.percentage(m, n));
+                break;
+            default:
+                Console.WriteLine("Number other than 1 to 5 is not accepted");
+                break;
+        }
+*/
+
+        //Question No 10
+
+        Console.WriteLine("Enter a name: ");
+        string name1=Console.ReadLine();
+        stringMethods str = new stringMethods();
+        Console.WriteLine("Name in Lower case: " + str.lowercase(name1));
+        stringMethods str1 = new stringMethods();
+        Console.WriteLine("Name in Upper case: " + str1.Uppercase(name1));
+        stringMethods len = new stringMethods();
+        Console.WriteLine("Name Length: " + len.Length(name1));
+
+        Console.Write("Enter father Name: ");
+        stringMethod name = new stringMethod();
+        Console.WriteLine("Name in Lowercase: " + name.low());
+        
+
+
+/*
+        //Question No 11
+
+        pizza piz = new pizza();
+        piz.setpsf(8,"Large","Chicken Tikka");
+        Console.WriteLine(piz.getpieces());
+        Console.WriteLine(piz.gets());
+        Console.WriteLine(piz.getf());
+*/
+    }
+}
+

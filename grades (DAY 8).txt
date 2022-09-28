@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class grades
+    {
+        string grade;
+        int number;
+        public grades()
+        {
+            grade = "";
+            number = 0;
+        }
+        public grades(int num)
+
+        {
+            number = num;
+            grade = gradFunc();
+        }
+        public string gradFunc()
+        {
+            switch (number)
+            {
+                case (>= 90):
+                    return "A";
+
+                case (>= 80):
+                    return "B";
+
+                case (>= 70):
+                    return "C";
+
+                case (>= 60):
+                    return "D";
+
+                case (<= 50):
+                    return "F";
+
+                default:
+                    return "F";
+            }
+        }
+        public void print()
+        {
+            Console.WriteLine("Your Grade is {0}", grade);
+        }
+
+    }
+    
+}

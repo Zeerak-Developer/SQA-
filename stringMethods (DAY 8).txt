@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class stringMethods
+    {
+        string name1;
+        int length;
+        public string lowercase(string name1)
+        {
+            name1 = name1.ToLower();
+            return name1;
+        }
+        public string Uppercase(string name1)
+        {
+            name1 = name1.ToUpper();
+            return name1;
+        }
+        public int Length(string name1)
+        {
+            length = name1.Length;
+            return length;
+        }
+        public char trim()
+        {
+            char[] charsToTrim = { '*', '.' };
+            string cleanString = name1.Trim(charsToTrim);
+        }
+    }
+}

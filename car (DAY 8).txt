@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class car
+    {
+        string type;
+        int model;
+        string color;
+        string manufacturer;
+
+        public car()
+        {
+            type = "";
+            model = 0;
+            color = "";
+            manufacturer = "";
+        }
+        public car(string type, int model, string color, string manufacturer)
+        {
+            this.type = type;
+            this.model = model;
+            this.color = color;
+            this.manufacturer = manufacturer;
+        }
+
+        public void print()
+        {
+            Console.WriteLine("Car Type: {0}\nCar Model: {1}\nCar Color: {2}", type, model, color);
+        }
+        public string manu()
+        {    
+            return manufacturer;
+        }
+    }
+}

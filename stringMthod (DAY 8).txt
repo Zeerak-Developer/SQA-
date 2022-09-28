@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class stringMethod
+    {
+        string name;
+        int length;
+        public string low(string name)
+        {
+            name = name.ToLower();
+            return name;
+        }
+        public int Length(string name)
+        {
+            length = name.Length;
+            return length;
+        }
+    }
+}

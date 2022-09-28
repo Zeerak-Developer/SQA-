@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class mathfunction
+    {
+        public double max()
+        {
+            double[] d = { 23.87, 45.90, 46.9, 7.9, 5.0, 56.999, 2.9098 };
+            double max = d[0];
+            for (int i = 1; i < d.Length; i++)
+            {
+                if (d[i] > max)
+                {
+                    max = d[i];
+                }
+            }
+            return max;
+        }
+
+        public double min()
+        {
+            double[] dd = { 23.87, 45.90, 46.9, 7.9, 5.0, 56.999, 2.9098 };
+            double min = dd[0];
+            for (int j = 1; j < dd.Length; j++)
+            {
+                if (dd[j] < min)
+                {
+                    min = dd[j];
+                }
+            }
+            return min;
+        }
+        public double avg()
+        {
+            double sum = 0;                             
+            double avg;
+            double[] arr7 = { 23.87, 45.90, 46.9, 7.9, 5.0, 56.999, 2.9098 };
+            for (int i = 0; i < arr7.Length; i++)
+            {
+                sum = sum + arr7[i];
+            }
+            avg = sum / arr7.Length;
+            return avg;          
+        }
+    }
+}

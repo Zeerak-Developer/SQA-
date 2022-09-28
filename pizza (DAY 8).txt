@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace day8
+{
+    internal class pizza
+    {
+       private int pieces;
+       private string size;
+       private string flavor;
+
+        public void setpsf(int amount, string newsize, string addflavor)
+        {
+            pieces = amount;
+            size = newsize;
+            flavor = addflavor;
+        }
+        public int getpieces()
+        {
+            return pieces;
+        }
+        public string gets()
+        {
+            return size;
+            
+        }
+        public string getf()
+        {
+            return flavor;
+
+        }
+
+
+
+
+    }
+}
