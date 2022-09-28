@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day4
+{
+    internal class Engineer
+    {
+        string name;
+        int age;
+        string department;
+        string company;
+        
+        public Engineer()
+        {
+            name = "";
+            age = 0;
+            department = "";
+            company = "";
+        }
+        public Engineer(string bname, int bage, string bdepartment, string bcompany)
+        {
+            name = bname;
+            age = bage;
+            department = bdepartment;
+            company = bcompany;
+        }
+        public void print()
+        {
+            Console.WriteLine("Name is: "+name+ '\n' + "Age is: "+age + '\n' + "Department is: "+department + '\n'+ "Company is: "+company);
+        }
+    }
+}

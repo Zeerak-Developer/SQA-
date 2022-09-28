@@ -1,0 +1,72 @@
+using System;
+namespace Day4;
+class program
+{
+    static void Main(String[] args)
+    {
+
+        //Question No 1:
+
+        lab4 array = new lab4();
+        array.Ar();
+
+        lab4 strr = new lab4();
+        Console.WriteLine(strr.str());
+
+        lab4 add = new lab4();
+        Console.WriteLine(add.sum());
+
+        lab4 strrr = new lab4();
+        Console.WriteLine(strrr.strr());
+
+        lab4 ar = new lab4();
+        Console.WriteLine(ar.array());
+
+        lab4 len = new lab4();
+        Console.WriteLine(len.length());
+
+        lab4 agg = new lab4();
+        Console.WriteLine(agg.age());
+
+        lab4 lar = new lab4();
+        Console.WriteLine(lar.largest());
+
+        //Question NO 2
+
+        Engineer details = new Engineer("Zeerak Asif",24,"SQA","Contour");
+        details.print();
+
+        //Question No 3
+
+        Console.WriteLine("Enter Number a: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Number b: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a case Number");
+        int c = Convert.ToInt32(Console.ReadLine());
+        switch (c)
+        {
+            case 1:
+                MathExercise sum = new MathExercise();
+                Console.WriteLine(sum.add(a, b));
+                break;
+            case 2:
+                MathExercise sub = new MathExercise();
+                Console.WriteLine(sub.sub(a, b));
+                break;
+            case 3:
+                MathExercise mul = new MathExercise();
+                Console.WriteLine(mul.mul(a, b));
+                break;
+            case 4:
+                MathExercise div = new MathExercise();
+                Console.WriteLine(div.div(a, b));
+                break;
+                default:
+                Console.WriteLine("Number other than 1 to 4 is not accepted");
+                break;
+        } 
+    }
+}
+
+
