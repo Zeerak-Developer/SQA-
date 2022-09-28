@@ -1,0 +1,164 @@
+using System;
+namespace task1;
+class program
+{
+    static void Main(String[] args)
+    {
+        // Question NO 1
+
+        Console.WriteLine("Enter a Number: ");
+        int a = Convert.ToInt32(Console.ReadLine());       
+        Console.WriteLine(a);
+
+        Console.WriteLine("Enter a Name: ");
+        string b = Console.ReadLine();
+        Console.WriteLine(b);
+
+        Console.WriteLine("Enter a Character: ");
+        char c = Convert.ToChar(Console.ReadLine());
+        Console.WriteLine(c);
+
+        float f = 12.76F;
+        Console.WriteLine(f);
+
+        Console.WriteLine("Enter a Number: ");
+        double d = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine(d);
+
+
+        long l = 50505055909097L;
+        Console.WriteLine("Value of L:"+l);
+
+        bool nice = true;
+        bool good = false;
+        Console.WriteLine("Value of bool when true: "+nice);
+        Console.WriteLine("Value of bool when false: " +good);
+
+        short s = 23;
+        Console.WriteLine("Value of Short: "+s);
+
+        byte g = 200;
+        Console.WriteLine("Value of Byte: "+g); // if byte value greater than 255 then it will show error
+
+        decimal h = 1098.98m;
+        Console.WriteLine("Value of Decimal: "+h);
+
+
+        // Question No 2
+
+        Console.WriteLine("\"Zeerak Asif\" is \\my\\ \'N\'ame");  
+
+
+        // Question No 3
+        
+        Console.WriteLine("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a City: ");
+        string city = Console.ReadLine();
+        Console.WriteLine(number + "  " + city);
+
+
+        // Question No 4
+        
+        const int i = 960;   
+        Console.WriteLine(i);
+
+
+        //question no 5
+        
+        Console.WriteLine("Enter a House Number: ");
+        int house_no = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a Street Name: ");
+        string street = Console.ReadLine();
+        Console.WriteLine("Enter a Area Name: ");
+        string area = Console.ReadLine();
+        Console.WriteLine("House Number "+house_no + " " + street+" " + "Street"+ " " + area);
+
+
+        // Question No 6
+
+        string name1 = "zeerak asif";  
+        string name2 = name1.ToUpper();
+        Console.WriteLine(name2);
+
+        // Question No 7
+
+        string fathername = "ASIF";  
+        string fname = fathername.ToLower();
+        Console.WriteLine(fname);
+
+        //Question NO 8
+
+        string[] arr = {"Zeerak","Asif","Malik"};
+        for(int e = 0; e < arr.Length; e++)
+        {
+            Console.WriteLine(arr[e]);
+        }
+
+
+        // Question No 9
+        
+        double[] d = new double[2] {12.34,17.56};
+
+
+        //Question No 10
+
+        char[] ch = new char[7]; 
+        for(int y = 0; y < ch.Length; y++)
+        {
+            ch[y] = Convert.ToChar(Console.ReadLine());
+            if (y > ch.Length)
+            {
+                Console.WriteLine("Invalid Number");
+            } 
+        }
+        for (int y = 0; y < ch.Length; y++)
+        {
+            Console.Write(ch[y]+" ");
+        }
+
+        
+        //Question No 11
+
+         string nam = "Zeerak";
+         Console.WriteLine("Enter a Character: ");
+         Console.WriteLine(nam.IndexOf(Console.ReadLine()));
+
+
+        // Question No 12
+
+         int[] arr7 = new int[10]{1,6,4,32,12,56,85,32,13,67};  
+         Console.WriteLine("The Odd Index value is:"+ " " + arr[1] + " " + arr[3] + " " + arr[5] + " " + arr[7] + " " + arr[9]);
+
+
+        // Question No 13
+
+         int m, n;
+         int[,] arr2 = new int[3, 1];
+         for(m = 0; m < 3; m++)
+         {
+            for(n = 0; n < 1; n++)
+            {
+                Console.WriteLine("Enter the values: ",m,n);
+                arr2[m, n] = Convert.ToInt32(Console.ReadLine());
+            }
+         }
+         Console.Write("The matrix is : ");
+            for (m = 0; m < 3; m++)
+            {
+            Console.Write("\n");
+            for (n = 0; n < 1; n++)
+                Console.Write("{0}\t", arr2[m, n]);
+            }
+
+
+         // Question No 14
+
+         int[] arr9 = new int[45];  
+         Console.WriteLine(arr9.Length);       
+    }
+
+}
+
+
+
