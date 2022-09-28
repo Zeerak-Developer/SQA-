@@ -1,0 +1,74 @@
+DAY 2 (LAB 1)
+
+
+using System;
+namespace day2;
+class program
+{
+    static void Main(string[] args)
+    {
+        int a = Convert.ToInt32(Console.ReadLine());   //Question No 1
+        if(a >= 33)
+        {
+            Console.WriteLine("Pass");
+        }
+        else
+        {
+            Console.WriteLine("Fail");
+        }
+
+        string s = "";   //Question No 2
+        string name = "Zeerak";
+        for(int i = name.Length - 1; i >= 0; i--)
+        {
+            string name1 = s + name[i];
+            Console.WriteLine("The String is reversed: {0}", name1);
+            Console.Write("\n");
+        }
+
+        char day;                        //Question No 3
+        Console.WriteLine("Enter a Alphabet: " );
+        day = Convert.ToChar(Console.ReadLine());
+        switch (day)
+        {
+            case 'm':
+                Console.WriteLine("Monday");
+                break;
+            case 't':
+                Console.WriteLine("Tuesday");
+                break;
+            case 'w':
+                Console.WriteLine("Wednesday");
+                break;
+            case 'T':
+                Console.WriteLine("Thursday");
+                break;
+            case 'f':
+                Console.WriteLine("Friday");
+                break;
+            case 's':
+                Console.WriteLine("Saturday");
+                break;
+            case 'S':
+                Console.WriteLine("Sunday");
+                break;
+        }
+
+        string name1 = "Zeerak";   //Question No 4
+        string name2 = "Asif";
+        string s = (name1.Length > name2.Length) ? "String1 is greater" : "String2 is greater";
+        Console.WriteLine(s);
+
+        Console.WriteLine("The String is: ");  //Question No 5
+        string l = Console.ReadLine();
+        int i = l.Length;
+        Console.WriteLine(i);
+
+        int num1 = 96;                  //Question No 6
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        int sum = num1 + num2;
+        Console.WriteLine("The sum is: {0}", sum);
+        int sub = num1 - num2;
+        Console.WriteLine("The subtraction is: {0}", sub);
+        }
+}
