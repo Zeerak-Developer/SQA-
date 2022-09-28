@@ -1,0 +1,196 @@
+using System;
+namespace day6;
+class program
+{
+    static void Main(String[] args)
+    {
+        string day = Console.ReadLine();
+
+        if (day == "monday" || day == "tuesday" || day == "wednesday" || day == "thursday" || day == "friday")
+        {
+            Console.WriteLine("WeekDay");
+        }
+        else if (day == "saturday" || day == "sunday")
+        {
+            Console.WriteLine("WeekEnd");
+        }
+        else
+        {
+            Console.WriteLine("Invalid");
+        }
+
+        // Ternary
+
+        string dd = Convert.ToString(Console.ReadLine());
+        string d = (dd == "monday" || dd == "tuesday" || dd == "wednesday" || dd == "thursday" || dd == "friday") ? "WeekDay" : (dd == "saturday" || dd == "sunday") ? "WeekEnd" : "Invalid";
+        Console.WriteLine(d);
+
+        // Switch Statement
+
+        string ddd;
+        Console.WriteLine("Enter a Day: ");
+        ddd = Console.ReadLine();
+        switch (ddd)
+        {
+            case "monday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
+                Console.WriteLine("WeekDay");
+                break;
+            case "saturday":
+            case "sunday":
+                Console.WriteLine("WeekEnd");
+                break;
+            default:
+            Console.WriteLine("Invalid");
+                break;
+        }
+
+        // Question No 2
+
+
+        for (int i = 101; i < 150; i++)
+        {
+            Console.WriteLine(i);
+        }
+
+
+        // Question No 3
+
+        Console.WriteLine("Enter book numer : ");
+        int book = Convert.ToInt32(Console.ReadLine());
+        if (book == 1)
+        {
+            Console.WriteLine("Book 1 is written by Author 1 and Author 2");
+        }
+        else if (book == 2)
+        {
+            Console.WriteLine("Book 2 is written by Author 3");
+        }
+        else
+        {
+            Console.WriteLine("Authors are unknown");
+        }
+
+
+        // Question No 4
+
+        Console.WriteLine("Enter a number 1: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a number 2: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        if (num1 > num2)
+        {
+            Console.WriteLine("Num1 is greater number: " + num1);
+        }
+        else
+            Console.WriteLine("Num2 is greater number: " + num2);
+
+
+        // Question # 5
+
+        Console.WriteLine("Enter a first value = ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter a Second value = ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        int y = a;
+        a = b;
+        b = y;
+        Console.WriteLine("After swaping the values");
+        Console.WriteLine("First value = " + a);
+        Console.WriteLine("Second value = " + b);
+        Console.WriteLine("The sum of two values is = " + (a + b));
+
+
+        // Question No 6
+
+        int j = 1;
+        int t = 5;
+        while (j <= 10)
+        {
+            Console.WriteLine("5  * " + j + "  =  " + j * t);
+            j++;
+        }
+
+
+        // Question No 7
+
+        int sum = 0;
+        int[] arr1 = new int[5] { 9, 7, 10, 8, 9 };
+        for (int z = 0; z < arr1.Length; z++)
+        {
+            sum = sum + arr1[z];
+        }
+        Console.WriteLine("The sum of array values = " + sum);
+
+        Console.WriteLine("Enter a value substract from sum = ");
+        int sub = Convert.ToInt32(Console.ReadLine());
+        sub = sum - sub;
+        Console.WriteLine("The value after subtract from sum of array value = " + sub);
+
+
+        // Question No 8
+
+        double s = 0;
+        double[] arr = new double[5] { 10.85, 5.87, 10.12, 15.3, 3.87 };
+        for (int x = 0; x < arr.Length; x++)
+        {
+            s = s + arr[x];
+        }
+        double avg = s / 5;
+        Console.WriteLine("The average of double array is = " + avg);
+
+
+        // Question No 9
+
+        int odd = 0;
+        int[] arr2 = new int[7];
+        for (int k = 0; k < arr2.Length; k++)
+        {
+            Console.WriteLine("Odd Number {0}: ", k + 1);
+            arr2[k] = Convert.ToInt32(Console.ReadLine());
+        }
+        for (int k = 0; k < arr2.Length; k++)
+        {
+            if (arr2[k] % 2 != 0)
+            {
+                odd++;
+            }
+        }
+        Console.WriteLine("Odd Elememts: {0}", odd);
+    
+         // Question No 10
+
+        int bb, e, h, pow;
+        Console.Write("Enter any base number: ");
+        bb = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter any exp number: ");
+        e = Convert.ToInt32(Console.ReadLine());
+        pow = 1;        
+        for (h = 1; h <= e; h++)
+        {
+            pow = pow * bb;
+         }
+         Console.WriteLine("Result is: " + pow);
+
+        // Question No 11
+
+        Console.WriteLine("Enter any Number: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        double sq = Convert.ToDouble(Math.Sqrt(n));
+        if(sq* sq == n)
+        {
+            Console.WriteLine("The number is perfect square root");
+        }
+        else
+        {
+            Console.WriteLine("The number is not perfect square root");
+        }
+    }
+}
+
+
+
+
