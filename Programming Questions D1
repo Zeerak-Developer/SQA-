@@ -1,0 +1,82 @@
+using System;
+namespace task1;
+class program
+{
+    static void Main(String[] args)
+    {
+        int a = 10;       // Question NO 1
+        Console.WriteLine(a);
+        string b = "Zeerak Asif";
+        Console.WriteLine(b);
+        char c = 'z';
+        Console.WriteLine(c);
+        float f = 12.76F;
+        Console.WriteLine(f);
+        double d = 49.9998D;
+        Console.WriteLine(d);
+        long l = 50505055909097L;
+        Console.WriteLine(l);
+        bool nice = true;
+        bool good = false;
+        Console.WriteLine(nice);
+        Console.WriteLine(good);
+        short s = 23;
+        Console.WriteLine(s);
+        byte g = 200;
+        Console.WriteLine(g); // if byte value greater than 255 then it will show error
+        decimal h = 1098.98m;
+        Console.WriteLine(h);
+
+        Console.WriteLine("\"*Zeerak\" is \\my\\ \'N\'ame");  // Question No 2
+
+        string firstname = "COMSATS UNIVERSITY ISLAMABAD, Sahiwal";  // Question No 3
+        string lastname = "Lahore";
+        Console.WriteLine(firstname + "  " + lastname);
+
+        const int i = 960;   // Question No 4
+        Console.WriteLine(i);
+
+        string name = Console.ReadLine();      //question no 5
+        string school = Console.ReadLine();
+        string degree = Console.ReadLine();
+        Console.WriteLine("name is: " + name);
+        Console.WriteLine("school is: " + school);
+        Console.WriteLine("degree is: " + degree);
+
+        string name1 = "zeerak asif";  // Question No 6
+        string name2 = name1.ToUpper();
+        Console.WriteLine(name2);
+
+        string fathername = "ASIF";  // Question No 7
+        string fname = fathername.ToLower();
+        Console.WriteLine(fname);
+
+        //ARRAYS
+
+        int[] arr2 = new int[10]; //Question NO 1
+
+        float[] fl = new float[2];  // Question No 2
+
+        char[] ch = new char [6]; //Question No 3
+        ch[0] = 'z';
+        ch[1] = 'e';
+        ch[2] = 'e';
+        ch[3] = 'r';
+        ch[4] = 'a';
+        ch[5] = 'k';
+        Console.WriteLine(ch);
+
+        string nam = "Zeerak";  //Question No 4
+        Console.WriteLine(nam.IndexOf('a'));
+
+        int[] arr = new int[5] { 1, 23, 4, 6, 7};  //Question No 5
+        Console.WriteLine(arr[4] + " " + arr[3] + " " + arr[2] + " " + arr[1]+ " " + arr[0]);
+
+        int[] ar1 = new int[20];  // Question No 7
+        Console.WriteLine(ar1.Length);
+    }
+
+}
+
+
+
